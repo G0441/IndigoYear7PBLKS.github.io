@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .radio-group input,
+        .check-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #54c058;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn-secondary {
+            background-color: #2196F3;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h1>Register Form</h1>
+    <p>Please fill in your information below</p>
+
+    <form action="15.login.html" method="post" onsubmit="alert('Registration successful! Please login.')">
+
+        <label>First Name</label>
+        <input type="text" value="Rain" readonly><br><br>
+
+        <label>Last Name</label>
+        <input type="text" value="John" autofocus><br><br>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password"><br><br>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email"><br><br>
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender" disabled> Other
+        </div>
+
+        <label>Education</label>
+        <div class="check-group">
+            <input type="checkbox"> BC(IT)<br>
+            <input type="checkbox"> ME(IT)<br>
+            <input type="checkbox"> PhD(IT)
+        </div>
+
+        <label>Birthday</label>
+
+    <!-- Day -->
+    <select>
+        <option>Day</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </select>
+
+    <!-- Month -->
+    <select>
+        <option>Month</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+
+    <!-- Year -->
+    <select>
+        <option>Year</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+    </select>
+
+
+        <label>Description</label>
+        <textarea placeholder="Write something about yourself..."></textarea>
+
+        <button class="btn" type="submit">Submit</button>
+        <button class="btn btn-secondary" type="reset">Reset</button>
+
+    
+
+    </form>
+
+</div>
+
+</body>
+</html>

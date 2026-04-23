@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /* descendant selectors */
+        div p {
+            background-color: lightgreen;
+        }
+        /* child selectors */
+        div > p {
+            color: blue;
+        }
+        /* next silbing selectors */
+        div + p {
+            font-size: 50px;
+        }
+        /* subsequent-sibling selectors */
+        div ~ p {
+            text-decoration: wavy underline;
+        }
+    </style>
+</head>
+<body>
+    <p>First Heading</p>
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+
+    <div>
+        <p>Third Paragraph</p>
+        <section>
+            <p>Paragraph in a section</p>
+        </section>
+    </div>
+    <p>Fourth Paragraph</p>
+    <p>Fifth Paragraph</p>
+</body>
+</html>
